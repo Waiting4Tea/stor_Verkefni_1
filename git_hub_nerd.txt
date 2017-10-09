@@ -1,7 +1,7 @@
 ========================================================================================
 Step 1: create "New Repository"
 Step 2: clone the repository by doing
-        - git clone https://gihub.com/username/username.github.io
+        - git clone https://github.com/username/username.github.io
 Step 3: go to the project
         - cd username.github.io
 Step 4: push it by Add, commit, and push your changes
