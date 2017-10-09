@@ -8,6 +8,10 @@ header {
   width: 100%;
   min-height: 500px;
 
-  background: transparent url(header.jpg) no-repeat fixed 50% 50%;
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
+}
+
+.header .button{
+  
 }
