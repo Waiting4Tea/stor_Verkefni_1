@@ -1,0 +1,16 @@
+{
+  "name": "prufun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint css/*.scss --syntax scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^8.2.0",
+    "stylelint-config-primer": "^2.1.0"
+  }
+}

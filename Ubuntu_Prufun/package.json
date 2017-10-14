@@ -1,0 +1,20 @@
+{
+  "name": "prufun2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -o css css/styles.scss",
+    "lint": "stylelint css/*.scss --syntax scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {
+    "stylelint": "^8.2.0",
+    "stylelint-config-primer": "^2.1.0"
+  }
+}
