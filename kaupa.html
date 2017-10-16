@@ -1,100 +1,114 @@
-
 <!doctype html>
 <html class="grid" lang="is">
-  <head>
-    <meta charset="utf-8">
-    <title>Verkefni 6 – síða</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="heading heading--one">Architecto beatae vitae dicta sunt explicabo</h1>
-    </header>
-    <main>
-      <div class="grid">
-        <div class="row">
-          <div class="col col-12">
-            <h2 class="heading heading--two">Totam rem aperiam</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-8 col-sm-12">
-            <div class="text">
-              <p class="text__p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Qui officia deserunt mollit anim id est laborum. Nihil molestiae consequatur, vel illum qui dolorem eum. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Esse cillum dolore eu fugiat nulla pariatur. Itaque earum rerum hic tenetur a sapiente delectus. Duis aute irure dolor in reprehenderit in voluptate velit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
 
-              <p class="text__p">Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Totam rem aperiam. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Animi, id est laborum et dolorum fuga. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et harum quidem rerum facilis est et expedita distinctio. At vero eos et accusamus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-            </div>
-          </div>
-          <div class="col col-4 col-sm-12">
-            <img alt="" src="1.jpg">
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Verkefni 6 – síða</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="kstyles.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
 
-        <div class="row">
-          <div class="col col-12">
-            <h2 class="heading heading--two">Do eiusmod tempor incididunt ut labore</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-4 col-sm-12">
-            <img alt="" src="2.jpg">
-          </div>
-          <div class="col col-8 col-sm-12">
-            <div class="text">
-              <p class="text__p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Qui officia deserunt mollit anim id est laborum. Nihil molestiae consequatur, vel illum qui dolorem eum. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Esse cillum dolore eu fugiat nulla pariatur. Itaque earum rerum hic tenetur a sapiente delectus. Duis aute irure dolor in reprehenderit in voluptate velit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+<body>
+  <header class="header">
+    <h1 class="heading heading--one">Kaupa</h1>
+  </header>
+  <main>
 
-              <p class="text__p">Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Totam rem aperiam. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Animi, id est laborum et dolorum fuga. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et harum quidem rerum facilis est et expedita distinctio. At vero eos et accusamus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="cardlist">
-        <div class="cardlist__row">
+    <div class="grid">
+      <div class="row">
+        <div class="col col-4">
 
-          <div class="cardlist__col">
-            <div class="card">
-              <div class="card__image">
-                <img src="3.jpg" alt="" class="card__img">
+
+
+          <form class="form-horizontal span6">
+            <fieldset>
+              <legend>Persónuupplýsingar</legend>
+
+              <div class="form-group">
+                <label class="control-label">Nafn:</label>
+                <div class="controls">
+                  <input type="text" title="Fullt nafn">
+                </div>
               </div>
-              <div class="card__content">
-                <h3 class="card__heading">Morbi consectetur arcu vitae enim mattis eleifend</h3>
-                <p class="card__text">Quisque ut maximus sem. Quisque ultricies, elit malesuada rutrum imperdiet, nisi enim vehicula urna, a porttitor justo magna sed purus. Etiam sit amet metus erat. Quisque semper tincidunt massa, non porttitor est congue eget. In commodo risus ac lorem vestibulum aliquam.</p>
-                <button class="button">Lesa meira</button>
-              </div>
-            </div>
-          </div>
 
-          <div class="cardlist__col">
-            <div class="card">
-              <div class="card__image">
-                <img src="4.jpg" alt="" class="card__img">
+              <div class="form-group">
+                <label class="control-label">Kennitala:</label>
+                <div class="controls">
+                  <input type="text" title="Fullt nafn" required autofocus placeholder="123456-7890">
+                </div>
               </div>
-              <div class="card__content">
-                <h3 class="card__heading">Sed sodales</h3>
-                <p class="card__text">Sed et varius libero. Quisque sit amet purus magna. Fusce efficitur neque id orci facilisis, nec malesuada nunc sollicitudin. In condimentum ullamcorper tellus, vitae aliquet turpis dapibus quis. Phasellus vitae commodo tellus.</p>
-                <button class="button">Lesa meira</button>
-              </div>
-            </div>
-          </div>
 
-          <div class="cardlist__col">
-            <div class="card">
-              <div class="card__image">
-                <img src="5.jpg" alt="" class="card__img">
+              <p>Kyn:</p>
+
+              <label for="male">Kona</label>
+              <input type="radio" name="gender" id="female" value="female"><br>
+              <label for="female">Karl</label>
+              <input type="radio" name="gender" id="male" value="male"><br>
+              <label for="other">Annað</label>
+              <input type="radio" name="gender" id="other" value="other"><br><br>
+
+              <label for="phonenum">Sími:</label><br/>
+              <input id="phonenum" type="tel" required required autofocus placeholder="+354 812 3456">
+
+              <div class="form-group">
+                <label class="control-label">Heimilisfang:</label>
+                <div class="controls">
+                  <input type="text" title="Heimilisfang">
+                </div>
               </div>
-              <div class="card__content">
-                <h3 class="card__heading">Curabitur dolor ante uctus ac urna</h3>
-                <p class="card__text">Cras varius hendrerit elit. Morbi eu erat congue, porta ligula in, tempus tellus. Phasellus facilisis euismod nulla, eget dapibus ipsum vestibulum a.</p>
-                <button class="button">Lesa meira</button>
-              </div>
-            </div>
-          </div>
+
+              <input type="checkbox"> Skrá mig á póstlista
+
+              </fieldset>
 
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+
+
+
+    <div class="grid">
+      <div class="row">
+        <div class="col col-4">
+
+          <form class="form-horizontal span6">
+            <fieldset>
+              <legend>Greiðlsuupplýsingar</legend>
+
+              <label class="col-sm-3 control-label" for="expiry-month">Greiða með:</label><br>
+
+              <select class="form-control col-sm-2">
+                        <option value="01">Kreditkorti</option>
+                        <option value="02">Millifærslu</option>
+                        <option value="03">Reiðufé</option>
+
+                        
+
+
+
+            </fieldset>
+        </div>
+      </div>
+    </div>
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+</body>
+
 </html>
