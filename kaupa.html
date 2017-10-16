@@ -18,20 +18,24 @@
 
     <div class="grid">
       <div class="row">
-        <div class="col col-4">
+        <div class="col col-1">
 
-
-
-          <form class="form-horizontal span6">
+          <form class="form-horizontal">
             <fieldset>
               <legend>Persónuupplýsingar</legend>
 
+
+              <div class="col col-2">
               <div class="form-group">
                 <label class="control-label">Nafn:</label>
                 <div class="controls">
                   <input type="text" title="Fullt nafn">
                 </div>
               </div>
+              <div>
+
+
+
 
               <div class="form-group">
                 <label class="control-label">Kennitala:</label>
@@ -40,17 +44,22 @@
                 </div>
               </div>
 
-              <p>Kyn:</p>
 
-              <label for="male">Kona</label>
-              <input type="radio" name="gender" id="female" value="female"><br>
-              <label for="female">Karl</label>
-              <input type="radio" name="gender" id="male" value="male"><br>
-              <label for="other">Annað</label>
-              <input type="radio" name="gender" id="other" value="other"><br><br>
+
+                <p>Kyn:</p>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Kona</label><br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Karl</label><br>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Annað</label>
+
+
 
               <label for="phonenum">Sími:</label><br/>
               <input id="phonenum" type="tel" required required autofocus placeholder="+354 812 3456">
+
+
 
               <div class="form-group">
                 <label class="control-label">Heimilisfang:</label>
@@ -59,11 +68,10 @@
                 </div>
               </div>
 
+
               <input type="checkbox"> Skrá mig á póstlista
-
-              </fieldset>
-
-        </div>
+            </fieldset>
+          </div>
       </div>
     </div>
 
@@ -71,47 +79,90 @@
 
     <div class="grid">
       <div class="row">
-        <div class="col col-4">
+        <div class="col col-1">
 
-          <form class="form-horizontal span6">
+          <form class="form-horizontal">
             <fieldset>
               <legend>Greiðlsuupplýsingar</legend>
 
-              <label class="col-sm-3 control-label" for="expiry-month">Greiða með:</label><br>
-                <select class="form-control col-sm-2">
+              <label class="col-3 control-label" for="expiry-month">Greiða með:</label><br>
+              <select class="form-control col-4">
                         <option value="01">Kreditkorti</option>
                         <option value="02">Millifærslu</option>
                         <option value="03">Reiðufé</option>
                 </select>
 
-                <div class="form-group">
-                  <label class="control-label">Nafn á korti:</label>
-                  <div class="controls">
-                    <input type="text">
-                  </div>
+              <div class="form-group">
+                <label class="control-label">Nafn á korti:</label>
+                <div class="controls">
+                  <input type="text">
                 </div>
+              </div>
 
-                <div class="form-group">
-                  <label class="control-label">Kortanúmer:</label>
-                  <div class="controls">
-                    <input type="text" title="Fullt nafn" required autofocus placeholder="5999-9999-9999-9999">
-                  </div>
+              <div class="form-group">
+                <label class="control-label">Kortanúmer:</label>
+                <div class="controls">
+                  <input type="text" title="Fullt nafn" required autofocus placeholder="5999-9999-9999-9999">
                 </div>
+              </div>
+
+              <label class="col-sm-3 control-label" for="expiry-month">Gildistími:</label>
 
 
+              <div class="col-xs-3">
+                <label class="control-label">Mán:</label>
+                <select class="form-control col-3">
 
-
-
-            </fieldset>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              </div>
+              <div class="col-3">
+                <label class="control-label">Ár:</label>
+                <select class="form-control" name="expiry-year">
+                <option value="13">2017</option>
+                <option value="14">2018</option>
+                <option value="15">2019</option>
+                <option value="16">2020</option>
+              </select>
+              </div>
         </div>
       </div>
     </div>
 
-
-
-          </form>
+    <div class="cardlist">
+      <div class="cardlist__row">
+        <div class="cardlist__col">
+          <div class="card__content">
+            <button class="button">Panta</button>
+          </div>
         </div>
       </div>
+
+
+
+
+
+      </fieldset>
+    </div>
+    </div>
+    </div>
+
+
+
+    </form>
+    </div>
+    </div>
     </div>
 
 
