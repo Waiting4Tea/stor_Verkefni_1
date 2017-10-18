@@ -642,13 +642,6 @@ h1 {
 
 /*Barinn*/
 
-.haus {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
 
 .bar {
   color: #fff;
