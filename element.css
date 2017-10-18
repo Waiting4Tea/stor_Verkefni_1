@@ -31,6 +31,13 @@ section {
   background-size: 112% 100%;
 }
 
+@media (max-width: 400px) {
+  .header {
+    background-position: unset;
+    background-size: 377% 218%;
+  }
+}
+
 
 /************************************** Efri Hluti *********************************************/
 
@@ -57,6 +64,12 @@ section {
   height: 50px;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 400px) {
+  .efriHluti {
+    width: 120%;
+  }
 }
 
 .haegraMegin__hListi, .vinstraMegin__vListi {
@@ -106,13 +119,38 @@ section {
 .head__h3 {
   margin-bottom: 0;
   font-family: "Roboto Slab";
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 400;
+  /* þetta er fyrir transition */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s linear 0.5s;
+}
+
+@media (max-width: 400px) {
+  .head__h3 {
+    font-size: 1.5em;
+  }
+}
+
+.nedriHluti:hover .head__h3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nedriHluti:hover .head__h1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nedriHluti:hover .button__stor {
+  visibility: visible;
+  opacity: 0.7;
 }
 
 .nedriHluti {
   display: flex;
-  height: 45em;
+  height: 60em;
   /* (100/3)*1% */
   flex-direction: column;
   justify-content: center;
@@ -122,6 +160,15 @@ section {
 .head__h1 {
   margin-top: 0;
   font-size: 4.31em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s linear 1.5s;
+}
+
+@media (max-width: 400px) {
+  .head__h1 {
+    font-size: 3em;
+  }
 }
 
 .button__stor {
@@ -129,9 +176,18 @@ section {
   font-family: "Open Sans";
   font-size: 2em;
   color: #fff;
+  visibility: hidden;
   background: #696969;
   border: 0;
   border-radius: 2px;
+  opacity: 0;
+  transition: opacity 2s linear 2.5s;
+}
+
+@media (max-width: 400px) {
+  .button__stor {
+    border-radius: 5px;
+  }
 }
 
 
@@ -149,6 +205,13 @@ section {
   .mynd__img {
     max-width: 34em;
     margin-left: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mynd__img {
+    max-width: 20em;
+    margin-left: 40px;
   }
 }
 
@@ -235,9 +298,22 @@ section {
   }
 }
 
+@media (max-width: 400px) {
+  .myndirOgComment__mc {
+    margin-top: 50px;
+    margin-left: 85px;
+  }
+}
+
 .myndir__img {
   max-width: 15em;
   border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .myndir__img {
+    margin-left: 25px;
+  }
 }
 
 .mc__myndir {
@@ -267,6 +343,13 @@ section {
   margin-top: -10px;
   font-size: 13px;
   color: #a9a9a9;
+}
+
+@media (max-width: 400px) {
+  .hugsun--1 {
+    width: 270px;
+    margin-left: -20px;
+  }
 }
 
 .hugsun--2 {
@@ -303,6 +386,18 @@ section {
   .mc-Rikki {
     margin-top: 75px;
     margin-left: 195px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mc-Rikki {
+    margin-left: 85px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mc__comment {
+    margin-right: 25px;
   }
 }
 
@@ -350,6 +445,12 @@ section {
   }
 }
 
+@media (max-width: 400px) {
+  .vinstraFooter {
+    margin-right: 50px;
+  }
+}
+
 .haegriFooter {
   margin-left: 55px;
 }
@@ -378,6 +479,19 @@ section {
   font-family: "Open Sans";
   font-weight: 400;
   background: #393939;
+}
+
+@media (max-width: 600px) {
+  .mc--gunnar {
+    max-width: 140px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .mc--gunnar {
+    max-width: 160px;
+  }
 }
 
 
