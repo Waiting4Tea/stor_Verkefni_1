@@ -648,41 +648,7 @@ h1 {
   justify-content: space-between;
 }
 
-.vinstraMegin__vListi {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 150px;
-  margin: 10px -10px 10px 0;
-}
 
-.efriHluti {
-  position: fixed;
-  top: 0;
-  display: flex;
-  width: 100%;
-  /* 1200px; */
-  height: 50px;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.haegraMegin__hListi, .vinstraMegin__vListi {
-  list-style-type: none;
-  /* nota til að eyða dot fyrir framan listi */
-}
-
-.hListi__gildi {
-  margin-top: 9px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.haegraMegin__hListi {
-  display: flex;
-  justify-content: center;
-  width: 150px;
-  padding-left: 0;
-}
 
 .bar {
   color: #fff;
@@ -757,20 +723,7 @@ h1 {
   margin-left: 6.5%;
 }
 
-.header {
-  display: flex;
-  max-width: 1200px;
-  min-height: 200px;
-  margin: 0 auto 20px;
-  align-items: center;
-}
 
-.heading {
-  width: 100%;
-  font-family: Merriweather, georgia, serif;
-  font-size: 2rem;
-  border: 0;
-}
 
 .box {
   font-size: 24px;
@@ -798,14 +751,4 @@ h1 {
 
 .kortnr {
   padding-bottom: 1em;
-}
-
-.button {
-  padding: 0.5em 6.5em;
-  font-family: "Open Sans";
-  font-size: 16px;
-  color: #fff;
-  background-color: #696969;
-  border-radius: 5px;
-  margin-left: 29.5em;
 }
