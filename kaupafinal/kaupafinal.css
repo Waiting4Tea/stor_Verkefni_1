@@ -1,0 +1,96 @@
+.col {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+  .col-1 {
+    width: 33.33333%;
+
+}
+  .col-2{
+    width: 33.33333%; }
+
+
+.offset-1 {
+  margin-left: 8.4%;
+ }
+
+.offset-7{
+  margin-left: 16.66667%;
+}
+
+.steini{
+  width: 100%;
+  font-size: 18px;
+  border-style: groove;
+}
+
+
+
+.gunnar{
+  width: 29%;
+  margin-left: 8%;
+  font-size: 16px;
+  border-style: groove;}
+
+
+
+
+
+.gunnar2{
+  width: 29%;
+  margin-left: 9%;
+  font-size: 16px;
+  border-style: groove;
+}
+
+
+.rikki2{
+  margin-left: 6.5%;
+}
+
+.box{
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.kyn{
+  padding-bottom: 0.4em;
+}
+.div1{
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.div2{
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.div3{
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.kortnr{
+  padding-bottom: 1em;
+}
+
+.button{
+  padding: 0.5em 6.5em;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #fff;
+    background-color: #696969;
+    border-radius: 5px;
+    margin-left: 29.5em;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+  font-family: 'Open Sans', sans-serif;
+}
