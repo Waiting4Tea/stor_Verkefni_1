@@ -50,7 +50,6 @@ header {
 .heading--one{
   color: white;
   margin-top: 3.5em;
-
   font-size: 60px;
 }
 
@@ -158,17 +157,14 @@ header {
   border-style: groove;
 }
 
-
-
 .gunnar{
   width: 29%;
   margin-left: 8%;
   font-size: 16px;
   border-style: groove;}
-
-
-
-
+@media (max-width: 600px;) {
+  .gunnar{margin-left: 3%;}
+}
 
 .gunnar2{
   width: 29%;
@@ -181,10 +177,6 @@ header {
 .rikki2{
   margin-left: 6.5%;
 }
-
-
-
-
 
 
 .box{
@@ -213,6 +205,8 @@ header {
 .kortnr{
   padding-bottom: 1em;
 }
+
+/*Takki*/
 
 .button{
   padding: 0.5em 6.5em;
@@ -268,3 +262,5 @@ header {
   background: #393939;
   height: 10.5em;
 }
+
+/*Footer END*/
