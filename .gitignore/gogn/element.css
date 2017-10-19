@@ -1,28 +1,754 @@
-nav {
+@charset "UTF-8";
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+section {
+  /* stylelint-disable-line */
+  margin-bottom: 10em;
+}
+
+.header {
   width: 100%;
-  min-height: 16px;
-  height: 10px;
-  padding: 20px;
-  background: #999;
-  max-height: 10px;
+  /* 1200px; */
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+  background: url("wubbalubbadubbdubb.jpg") no-repeat fixed;
+  background-position: center;
+  background-size: 112% 100%;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
+@media (max-width: 400px) {
+  .header {
+    background-position: unset;
+    background-size: 377% 218%;
+  }
 }
 
-header {
+
+/************************************** Efri Hluti *********************************************/
+
+.haus {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
-  padding: 2em;
-  width: 100%;
-  min-height: 500px;
-  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
+  justify-content: space-between;
+}
+
+.vinstraMegin__vListi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  margin: 10px -10px 10px 0;
+}
+
+.efriHluti {
+  position: fixed;
   top: 0;
-  left: 0;
+  display: flex;
+  width: 100%;
+  /* 1200px; */
+  height: 50px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 400px) {
+  .efriHluti {
+    width: 120%;
+  }
+}
+
+.haegraMegin__hListi, .vinstraMegin__vListi {
+  list-style-type: none;
+  /* nota til að eyða dot fyrir framan listi */
+}
+
+.hListi__gildi {
+  margin-top: -5px;
+}
+
+.haegraMegin__hListi {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding-left: 0;
+}
+
+.bar {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bar-1 {
+  font-size: 20px;
+}
+
+.bar-2 {
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.bar__litill {
+  padding: 6px 8px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #fff;
+  background: #696969;
+  border: 0;
+  /* none */
+  border-radius: 2px;
+}
+
+
+/************************************* Neðri Hluti *********************************************/
+
+.head__h3 {
+  margin-bottom: 0;
+  font-family: "Roboto Slab";
+  font-size: 2em;
+  font-weight: 400;
+  /* þetta er fyrir transition */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s linear 0.5s;
+}
+
+@media (max-width: 400px) {
+  .head__h3 {
+    font-size: 1.5em;
+  }
+}
+
+.nedriHluti:hover .head__h3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nedriHluti:hover .head__h1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nedriHluti:hover .button__stor {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.nedriHluti {
+  display: flex;
+  height: 60em;
+  /* (100/3)*1% */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head__h1 {
+  margin-top: 0;
+  font-size: 4.31em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s linear 1.5s;
+}
+
+@media (max-width: 400px) {
+  .head__h1 {
+    font-size: 3em;
+  }
+}
+
+.button__stor {
+  padding: 8px 16px;
+  font-family: "Open Sans";
+  font-size: 2em;
+  color: #fff;
+  visibility: hidden;
+  background: #696969;
+  border: 0;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 2s linear 2.5s;
+}
+
+@media (max-width: 400px) {
+  .button__stor {
+    border-radius: 5px;
+  }
+}
+
+
+/************************************ Um FooÞjónusta *******************************************/
+
+.mynd__img {
+  max-width: 36.77em;
+  /* 73% */
+  margin-top: 3em;
+  margin-right: 0;
+  border: 1px #000;
+}
+
+@media (max-width: 600px) {
+  .mynd__img {
+    max-width: 34em;
+    margin-left: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mynd__img {
+    max-width: 20em;
+    margin-left: 40px;
+  }
+}
+
+.fooAuglysingar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .fooAuglysingar {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* 400<=x<=600 (min-width: 400px) and (max-width: 600px) */
+
+.fooAuglysingar__foo {
+  display: flex;
+  flex-direction: column;
+}
+
+.meiraUmFoo__checkImg {
+  max-width: 2em;
+}
+
+.meiraUmFoo__thjonusta {
+  padding-left: 8px;
+  font-family: "Roboto Slab";
+  font-size: 1.5em;
+}
+
+.umFoo__meiraUmFoo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: -2px;
+}
+
+.umFoo__utskyringar {
+  padding-left: 38px;
+  margin-top: -40px;
+  line-height: 1.5em;
+}
+
+.utskyringar_texti {
+  margin-right: 3em;
+}
+
+.foo__umFoo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+  .foo__umFoo {
+    padding: 0 46px;
+  }
+}
+
+
+/*********************************** Mynd og Comment *******************************************/
+
+.myndirOgComment {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.myndirOgComment__mc {
+  display: flex;
+  width: 400px;
+  /* 1200/3=400px */
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .myndirOgComment__mc {
+    width: 225px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .myndirOgComment__mc {
+    margin-top: 50px;
+    margin-left: 85px;
+  }
+}
+
+.myndir__img {
+  max-width: 15em;
+  border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .myndir__img {
+    margin-left: 25px;
+  }
+}
+
+.mc__myndir {
+  display: flex;
+  width: 400px;
+  height: 240px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .mc__myndir {
+    width: 200px;
+  }
+}
+
+.comment__hugsun {
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .comment__hugsun {
+    font-size: 16px;
+  }
+}
+
+.comment__askrift {
+  margin-top: -10px;
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+@media (max-width: 400px) {
+  .hugsun--1 {
+    width: 270px;
+    margin-left: -20px;
+  }
+}
+
+.hugsun--2 {
+  margin-top: 50px;
+}
+
+.hugsun--3 {
+  margin-top: 50px;
+}
+
+.nafn--2 {
+  margin-top: 32px;
+}
+
+@media (max-width: 600px) {
+  .nafn--2 {
+    margin-top: 26px;
+  }
+}
+
+.nafn--3 {
+  margin-top: 32px;
+}
+
+.askrift--2 {
+  margin-top: -10px;
+}
+
+.askrfit--3 {
+  margin-top: -10px;
+}
+
+@media (max-width: 600px) {
+  .mc-Rikki {
+    margin-top: 75px;
+    margin-left: 195px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mc-Rikki {
+    margin-left: 85px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mc__comment {
+    margin-right: 25px;
+  }
+}
+
+
+/************************************** Kaupatakkid ********************************************/
+
+.texti__spurning {
+  font-family: "Roboto Slab";
+  font-size: 25px;
+}
+
+.takkid__kaupa {
+  padding: 0.5em 2.5em;
+  font-family: "Open Sans";
+  font-size: 32px;
+  color: #fff;
+  background-color: #696969;
+  border-radius: 5px;
+}
+
+.textiOgTakkid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.efriFooter {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  padding-top: 16px;
+  padding-bottom: 38px;
+  color: #fff;
+  border-bottom: 2px solid #a9a9a9;
+}
+
+.vinstraFooter {
+  padding-left: 26px;
+  margin-right: 100px;
+}
+
+@media (max-width: 600px) {
+  .vinstraFooter {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .vinstraFooter {
+    margin-right: 50px;
+  }
+}
+
+.haegriFooter {
+  margin-left: 55px;
+}
+
+@media (max-width: 600px) {
+  .haegriFooter {
+    margin-left: 0;
+  }
+}
+
+.textiFooter {
+  display: flex;
+  justify-content: center;
+  margin: 0 8px;
+  font-weight: 600;
+}
+
+.nedriFooter {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+.footer {
+  font-family: "Open Sans";
+  font-weight: 400;
+  background: #393939;
+}
+
+@media (max-width: 600px) {
+  .mc--gunnar {
+    max-width: 140px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .mc--gunnar {
+    max-width: 160px;
+  }
+}
+
+
+/*--------------Hér fyrir neðan er fyrir um síðuna----------------*/
+
+h1 {
+  font-size: 4em;
+}
+
+.heading {
+  font-family: 'Roboto Slab', serif;
+}
+
+.heading--two {
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.haus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vinstraMegin__vListi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  margin: 10px -10px 10px 0;
+}
+
+.efriHluti {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  /* 1200px; */
+  height: 50px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.haegraMegin__hListi, .vinstraMegin__vListi {
+  list-style-type: none;
+  /* nota til að eyða dot fyrir framan listi */
+}
+
+.hListi__gildi {
+  margin-top: 9px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.haegraMegin__hListi {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding-left: 0;
+}
+
+.bar {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bar-1 {
+  font-size: 20px;
+}
+
+.bar-2 {
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.bar__litill {
+  padding: 6px 8px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #fff;
+  background: #696969;
+  border: 0;
+  /* none */
+  border-radius: 2px;
+}
+
+.heading--one {
+  color: white;
+  line-height: 7em;
+}
+
+.offset-2 {
+  margin-left: 16.66667%;
+}
+
+.p1 {
+  padding-bottom: 1em;
+}
+
+.p2 {
+  float: right;
+  width: 56%;
+  font-size: 1.4em;
+  font-style: italic;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 35px;
+}
+
+.p3 {
+  padding-right: 10px;
+  font-size: 0.7em;
+  padding-top: 1em;
+}
+
+.p4 {
+  padding-bottom: 1em;
+}
+
+.button {
+  width: 100%;
+  max-width: 70px;
+  padding-top: 7px;
+  margin: 10px;
+  overflow: hidden;
+  font-family: Lato, helvetica, arial, sans-serif;
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: background-color 500ms ease, color 500ms ease;
+}
+
+.button:hover {
+  color: #eee;
+  background-color: #333;
+}
+
+
+/* --------- Hér að neðan er fyrir kaupa síðuna--------------*/
+
+
+/*Barinn*/
+
+.haus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.bar {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bar-1 {
+  font-size: 20px;
+}
+
+.bar-2 {
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.bar__litill {
+  padding: 6px 8px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #fff;
+  background: #696969;
+  border: 0;
+  /* none */
+  border-radius: 2px;
+}
+
+
+/*Barinn endar*/
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-1 {
+  width: 33.33333%;
+}
+
+.col-2 {
+  width: 33.33333%;
+}
+
+.offset-1 {
+  margin-left: 8.4%;
+}
+
+.offset-7 {
+  margin-left: 16.66667%;
+}
+
+.steini {
+  width: 100%;
+  font-size: 18px;
+  border-style: groove;
+}
+
+.gunnar {
+  width: 29%;
+  margin-left: 8%;
+  font-size: 16px;
+  border-style: groove;
+}
+
+.gunnar2 {
+  width: 29%;
+  margin-left: 9%;
+  font-size: 16px;
+  border-style: groove;
+}
+
+.rikki2 {
+  margin-left: 6.5%;
+}
+
+
+
+.box {
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.kyn {
+  padding-bottom: 0.4em;
+}
+
+.div1 {
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.div2 {
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.div3 {
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.kortnr {
+  padding-bottom: 1em;
 }
