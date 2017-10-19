@@ -1,0 +1,58 @@
+/*********************************** Mynd og Comment *******************************************/
+.myndirOgComment {
+  display: flex;
+}
+
+.myndirOgComment__mc {
+  display: flex;
+  width: 400px; /* 1200/3=400px */
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.myndir__img {
+  max-width: 15em;
+  border-radius: 50%;
+}
+
+.mc__myndir {
+  display: flex;
+  width: 400px;
+  height: 240px;
+  justify-content: center;
+}
+
+.comment__hugsun {
+  font-size: 24px;
+}
+
+.comment__askrift {
+  margin-top: -10px;
+  font-size: 13px;
+  color: #808;
+}
+
+.hugsun--2 {
+  margin-top: 50px;
+}
+
+.hugsun--3 {
+  margin-top: 50px;
+}
+
+.nafn--2 {
+  margin-top: 32px;
+}
+
+.nafn--3 {
+  margin-top: 32px;
+}
+
+.askrift--2 {
+  margin-top: -10px;
+}
+
+.askrfit--3 {
+  margin-top: -10px;
+}

@@ -1,0 +1,26 @@
+$max-width: 1200px;
+$gutter: 20px;
+
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+}
+
+body { /* stylelint-disable-line */
+  margin: 0;
+}
+main { /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+section { /* stylelint-disable-line */
+  margin-bottom: 10em;
+}
+
+@import "scss/header_af_forsidu.scss";
+@import "scss/umFoo_first_part.scss";
+@import "scss/umstilar.scss";
+@import "scss/mynd_Og_Comment.scss";
+@import "scss/kaupa.scss";
+@import "scss/footer_af_forsidu.scss";

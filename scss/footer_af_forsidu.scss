@@ -1,0 +1,59 @@
+.efriFooter {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  padding-top: 16px;
+  padding-bottom: 38px;
+  color: #fff;
+  border-bottom: 2px solid #a9a9a9;
+}
+
+.vinstraFooter {
+  padding-left: 26px;
+  margin-right: 100px;
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 400px) {
+    margin-right: 50px;
+  }
+}
+
+.haegriFooter {
+  margin-left: 55px;
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
+}
+
+.textiFooter {
+  display: flex;
+  justify-content: center;
+  margin: 0 8px;
+  font-weight: 600;
+}
+
+.nedriFooter {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+.footer {
+  font-family: "Open Sans";
+  font-weight: 400;
+  background: #393939;
+}
+
+.mc--gunnar {
+  @media (max-width: 600px) {
+    max-width: 140px;
+    text-align: center;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 160px;
+  }
+}

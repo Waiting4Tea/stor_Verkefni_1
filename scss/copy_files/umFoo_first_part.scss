@@ -1,0 +1,51 @@
+/************************************ Um FooÞjónusta *******************************************/
+.mynd__img {
+  max-width: 36.77em; /* 73% */
+  margin-top: 3em;
+  margin-right: 0;
+  border: 1px #000;
+}
+
+.fooAuglysingar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fooAuglysingar__foo {
+  display: flex;
+  flex-direction: column;
+}
+
+.meiraUmFoo__checkImg {
+  max-width: 2em;
+}
+
+.meiraUmFoo__thjonusta {
+  padding-left: 8px;
+  font-family: "Roboto Slab";
+  font-size: 1.5em;
+}
+
+.umFoo__meiraUmFoo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: -8px;
+}
+
+.umFoo__utskyringar {
+  padding-left: 32px;
+  margin-top: -40px;
+  line-height: 1.5em;
+}
+
+.utskyringar_texti {
+  margin-right: 3em;
+}
+
+.foo__umFoo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

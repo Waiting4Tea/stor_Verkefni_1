@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* setjum box-sizing: border-box; á allt */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+img{
+  max-width: 100%;
+}
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  padding-left: 4px;
+
+  background: transparent url(../bg-subpage.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+
+  /*max-width: 1200px;*/
+  /*min-height: 200px;*/
+  margin: 0 auto 20px;
+  align-items: center; }
+
+  .heading {
+    width: 100%;
+    font-family: Merriweather, georgia, serif;
+    border: 0;
+    align-items: flex-start;}
+
+
+
+.heading--one{
+  color: white;
+  margin-top: 3.5em;
+  font-size: 60px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Barinn*/
+.haus {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.vinstraMegin__vListi {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: 150px;
+ margin: 10px -10px 10px 0;
+
+}
+
+.efriHluti {
+ position: fixed;
+ top: 0;
+ display: flex;
+ width: 100%; /* 1200px; */
+ height: 50px;
+ justify-content: space-between;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+
+.haegraMegin__hListi,
+.vinstraMegin__vListi {
+ list-style-type: none; /* nota til að eyða dot fyrir framan listi */
+}
+
+.hListi__gildi {
+ margin-top: 9px;
+ font-family: 'Roboto Slab', serif;
+}
+
+.haegraMegin__hListi {
+ display: flex;
+ justify-content: center;
+ width: 150px;
+ padding-left: 0;
+}
+
+.bar {
+ color: #fff;
+ text-decoration: none;
+}
+
+.bar-1 {
+ font-size: 20px;
+}
+
+.bar-2 {
+ font-family: "Open Sans";
+ font-size: 15px;
+}
+
+.bar__litill {
+ padding: 6px 8px;
+ font-family: "Open Sans";
+ font-size: 15px;
+ color: #fff;
+ background: #696969 ;
+ border: 0; /* none */
+ border-radius: 2px;
+}
+
+/*Barinn endar*/
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+  .col-1 {
+    width: 33.33333%;
+
+}
+  .col-2{
+    width: 33.33333%; }
+
+
+.offset-1 {
+  margin-left: 8.4%;
+ }
+
+.offset-7{
+  margin-left: 16.66667%;
+}
+
+.steini{
+  width: 100%;
+  font-size: 18px;
+  border-style: groove;
+}
+
+.gunnar{
+  width: 29%;
+  margin-left: 8%;
+  font-size: 16px;
+  border-style: groove;}
+@media (max-width: 600px;) {
+  .gunnar{margin-left: 3%;}
+}
+
+.gunnar2{
+  width: 29%;
+  margin-left: 9%;
+  font-size: 16px;
+  border-style: groove;
+}
+
+
+.rikki2{
+  margin-left: 6.5%;
+}
+
+
+.box{
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.kyn{
+  padding-bottom: 0.4em;
+}
+.div1{
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.div2{
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.div3{
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+
+.kortnr{
+  padding-bottom: 1em;
+}
+
+/*Takki*/
+
+.button{
+  padding: 0.5em 6.5em;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #fff;
+    background-color: #696969;
+    border-radius: 5px;
+    margin-left: 29.5em;
+}
+
+/*Footer*/
+
+
+.efriFooter {
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  padding-top: 21px;
+  padding-bottom: 39px;
+  color: #fff;
+  border-bottom: 2px solid #a9a9a9; }
+
+.vinstraFooter {
+  padding-left: 26px;
+  margin-right: 100px; }
+  @media (max-width: 600px) {
+    .vinstraFooter {
+      margin-right: 0; } }
+
+.haegriFooter {
+  margin-left: 55px; }
+  @media (max-width: 600px) {
+    .haegriFooter {
+      margin-left: 0; } }
+
+.textiFooter {
+  display: flex;
+  justify-content: center;
+  margin: 0 8px;
+  font-weight: 600; }
+
+.nedriFooter {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #a9a9a9;
+  margin-top: 1.5em;}
+
+.footer {
+  font-family: "Open Sans";
+  font-weight: 400;
+  background: #393939;
+  height: 10.5em;
+}
+
+/*Footer END*/
