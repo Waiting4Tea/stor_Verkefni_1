@@ -21,6 +21,10 @@ Main
 Footer
 
 
+Element síðan er ekki lengur partur af verkefninu þannig að við keyrum ekki styleint villutékk.
+
+
+
 Upplýsingar um þáttakendur verkefnis:
 
 
@@ -30,4 +34,4 @@ Gunnar Þór Jóhannsson            --->  gthj7@hi.is
 
 Cuong Hung                       --->  chp3@hi.is
 
-Richard Vilhelm Andersen         --->  
+Richard Vilhelm Andersen         --->  rva3@hi.is
