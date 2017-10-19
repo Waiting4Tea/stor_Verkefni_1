@@ -1,0 +1,64 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url(bg.jpg) no-repeat fixed;
+    background-size: 100%;
+    background-position: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+/************************************** Efri Hluti *********************************************/
+.haus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vinstraMegin__vListi {
+  display: flex;
+}
+
+.efriHluti {
+  display: flex;
+  justify-content: space-between;
+  background: grey;
+  background-clip: border-box;
+}
+
+.haegraMegin__hListi, .vinstraMegin__vListi {
+    list-style-type: none; /* nota til að eyða dot fyrir framan listi */
+}
+
+.haegraMegin__hListi {
+    width: 150px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.vinstraMegin__vListi {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar {
+    text-decoration: none;
+}
+
+
+/************************************* Neðri Hluti *********************************************/
+.head__h3 {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+}
+
+.nedriHluti {
+    height: 1200px; /* (100/3)*1%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
